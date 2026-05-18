@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spotify Legends Pro</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style2.css">
+</head>
+
+<body>
+
+    <div class="spotify-app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+                <h2>Legends</h2>
+            </div>
+
+            <!-- SEARCH -->
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+
+                <input
+                    type="text"
+                    id="artist-search"
+                    placeholder="Buscar artista..."
+                >
+            </div>
+
+            <!-- GENRES -->
+            <div class="genre-wrapper">
+
+                <button class="pill active" data-genre="all">
+                    Todos
+                </button>
+
+                <button class="pill" data-genre="Reggaetón">
+                    Reggaetón
+                </button>
+
+                <button class="pill" data-genre="Corridos">
+                    Corridos
+                </button>
+
+                <button class="pill" data-genre="Bachata">
+                    Bachata
+                </button>
+
+                <button class="pill" data-genre="Salsa">
+                    Salsa
+                </button>
+
+                <button class="pill" data-genre="Banda">
+                    Banda
+                </button>
+
+                <button class="pill" data-genre="Cumunbia">
+                    Cumbia
+                </button>
+
+            </div>
+
+            <!-- ARTISTS -->
+            <div
+                class="artist-list-container"
+                id="artist-list-container"
+            >
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-view">
+
+            <!-- WELCOME -->
+            <div
+                class="welcome-screen"
+                id="welcome-msg"
+            >
+
+                <div class="welcome-content">
+
+                    <i class="fab fa-spotify"></i>
+
+                    <h1>
+                        Spotify Legends
+                    </h1>
+
+                    <p>
+                        Explora los artistas más grandes
+                        de todos los géneros musicales.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- DETAIL -->
+            <div
+                class="artist-detail"
+                id="artist-detail"
+                style="display: none;"
+            >
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script/script2.js"></script>
+
+</body>
+
+</html>

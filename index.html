@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog especializado en música: tutoriales, reseñas, teoría musical y recursos descargables">
+    <meta name="keywords" content="música, blog musical, tutoriales de música, teoría musical, producción musical">
+    <title>Melodías Digitales - Blog de Música</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Botón de música flotante ultra minimalista -->
+    <button class="music-ctrl" id="musicCtrl" onclick="toggleAmbientMusic()" title="Música ambiental">
+        <svg class="music-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+        </svg>
+        <span class="music-tooltip">Música ambiental</span>
+    </button>
+
+    <audio id="ambientMusic" loop preload="auto">
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_c6c8f3f3cd.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Melodías Digitales</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#tutoriales">Tutoriales</a></li>
+                <li><a href="#teoria">Teoría Musical</a></li>
+                <li><a href="index2.html">Leyendas</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Explora el Mundo de la Música</h2>
+                <p>Tutoriales, teoría musical, producción y recursos para músicos de todos los niveles</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Artículo 1 -->
+                <article class="blog-post" data-category="tutoriales">
+                    <div class="post-image-container">
+                        <img src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg" alt="Guitarra acústica siendo tocada" class="post-image">
+                    </div>
+                    <div class="post-content">
+                        <span class="category">Tutoriales</span>
+                        <h3><a href="#">Guía Completa para Aprender Guitarra desde Cero</a></h3>
+                        <p class="post-meta">15 de Mayo, 2026 | Carlos Mendoza</p>
+                        <p class="post-excerpt">
+                            Descubre cómo empezar tu viaje musical con la guitarra. Desde cómo sostener el instrumento correctamente hasta tus primeros acordes. Esta guía paso a paso te llevará de principiante a tocar tus primeras canciones en tiempo récord...
+                        </p>
+                        <a href="#" class="read-more">Leer artículo completo</a>
+                        <div class="tags">
+                            <span class="tag">guitarra</span>
+                            <span class="tag">principiantes</span>
+                            <span class="tag">acordes</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artículo 2 -->
+                <article class="blog-post" data-category="teoria">
+                    <div class="post-image-container">
+                        <img src="https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg" alt="Partitura musical" class="post-image">
+                    </div>
+                    <div class="post-content">
+                        <span class="category">Teoría Musical</span>
+                        <h3><a href="#">Entendiendo las Escalas Mayores y Menores</a></h3>
+                        <p class="post-meta">12 de Mayo, 2026 | Ana Rodríguez</p>
+                        <p class="post-excerpt">
+                            Las escalas son la base de toda la música occidental. En este artículo exploramos la diferencia fundamental entre escalas mayores y menores, cómo se construyen y por qué transmiten diferentes emociones...
+                        </p>
+                        <a href="#" class="read-more">Leer artículo completo</a>
+                        <div class="tags">
+                            <span class="tag">escalas</span>
+                            <span class="tag">teoría</span>
+                            <span class="tag">armonía</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artículo 3 -->
+                <article class="blog-post" data-category="produccion">
+                    <div class="post-image-container">
+                        <img src="https://images.pexels.com/photos/3771118/pexels-photo-3771118.jpeg" alt="Estudio de producción musical" class="post-image">
+                    </div>
+                    <div class="post-content">
+                        <span class="category">Producción</span>
+                        <h3><a href="#">Crea tu Primer Beat en 30 Minutos</a></h3>
+                        <p class="post-meta">10 de Mayo, 2026 | Diego Martínez</p>
+                        <p class="post-excerpt">
+                            Tutorial paso a paso para crear tu primer beat usando software gratuito. Desde la instalación hasta la exportación final, te guiamos en cada paso del proceso. Aprenderás a programar baterías, crear líneas de bajo y añadir melodías...
+                        </p>
+                        <a href="#" class="read-more">Leer artículo completo</a>
+                        <div class="tags">
+                            <span class="tag">producción</span>
+                            <span class="tag">beats</span>
+                            <span class="tag">tutorial</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artículo 4 -->
+                <article class="blog-post" data-category="tutoriales">
+                    <div class="post-image-container">
+                        <img src="https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg" alt="Persona tocando piano" class="post-image">
+                    </div>
+                    <div class="post-content">
+                        <span class="category">Tutoriales</span>
+                        <h3><a href="#">5 Ejercicios para Mejorar tu Técnica en Piano</a></h3>
+                        <p class="post-meta">8 de Mayo, 2026 | Ana Rodríguez</p>
+                        <p class="post-excerpt">
+                            El piano requiere disciplina y práctica constante. Estos 5 ejercicios te ayudarán a desarrollar independencia en los dedos, mejorar tu velocidad y precisión...
+                        </p>
+                        <a href="#" class="read-more">Leer artículo completo</a>
+                        <div class="tags">
+                            <span class="tag">piano</span>
+                            <span class="tag">ejercicios</span>
+                            <span class="tag">técnica</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artículo 5 -->
+                <article class="blog-post" data-category="teoria">
+                    <div class="post-image-container">
+                        <img src="https://images.pexels.com/photos/4087992/pexels-photo-4087992.jpeg" alt="Libros de música" class="post-image">
+                    </div>
+                    <div class="post-content">
+                        <span class="category">Teoría Musical</span>
+                        <h3><a href="#">Historia de la Música: Del Barroco al Romanticismo</a></h3>
+                        <p class="post-meta">5 de Mayo, 2026 | Carlos Mendoza</p>
+                        <p class="post-excerpt">
+                            Un recorrido fascinante por tres siglos de evolución musical. Desde Bach y Vivaldi hasta Beethoven y Chopin, exploramos cómo cambió la música, los instrumentos y las formas de composición...
+                        </p>
+                        <a href="#" class="read-more">Leer artículo completo</a>
+                        <div class="tags">
+                            <span class="tag">historia</span>
+                            <span class="tag">música clásica</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artículo 6 - Tutorial destacado -->
+                <article class="blog-post featured" data-category="produccion">
+                    <div class="post-image-container">
+                        <img src="https://images.pexels.com/photos/164745/pexels-photo-164745.jpeg" alt="Software de producción musical" class="post-image">
+                        <div class="featured-badge">TUTORIAL</div>
+                    </div>
+                    <div class="post-content">
+                        <span class="category">Producción Musical</span>
+                        <h3><a href="#">Tutorial Completo: Graba tu Primera Canción en Casa</a></h3>
+                        <p class="post-meta">1 de Mayo, 2026 | Diego Martínez</p>
+                        <p class="post-excerpt">
+                            Guía detallada paso a paso para grabar música desde casa con equipo básico. Cubrimos todo el proceso: configuración del espacio, selección de micrófono, interfaz de audio, software DAW, técnicas de grabación, edición y mezcla básica...
+                        </p>
+                        <a href="#" class="read-more">Ver tutorial completo</a>
+                        <div class="tags">
+                            <span class="tag">grabación</span>
+                            <span class="tag">tutorial</span>
+                            <span class="tag">home studio</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <aside class="sidebar">
+                <div class="widget">
+                    <h4>Buscar artículos</h4>
+                    <input type="text" id="searchInput" placeholder="Buscar..." class="search-input">
+                </div>
+
+                <div class="widget">
+                    <h4>Categorías</h4>
+                    <ul class="category-list">
+                        <li><a href="#" data-category="tutoriales">Tutoriales</a></li>
+                        <li><a href="#" data-category="teoria">Teoría Musical</a></li>
+                        <li><a href="#" data-category="produccion">Producción</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget download-widget">
+                    <h4>Recurso Descargable</h4>
+                    <div class="download-card">
+                        <h5>eBook Gratuito</h5>
+                        <p>"Fundamentos de Teoría Musical"</p>
+                        <button class="download-btn" onclick="descargarRecurso()">Descargar PDF</button>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h4>Etiquetas</h4>
+                    <div class="tag-cloud">
+                        <span class="tag">guitarra</span>
+                        <span class="tag">piano</span>
+                        <span class="tag">teoría</span>
+                        <span class="tag">producción</span>
+                        <span class="tag">acordes</span>
+                        <span class="tag">escalas</span>
+                    </div>
+                </div>
+
+                <div class="widget newsletter-widget">
+                    <h4>Newsletter</h4>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Tu correo" required>
+                        <button type="submit">Suscribirme</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Melodías Digitales</h4>
+                <p>Blog de música y aprendizaje</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="YouTube">YT</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Melodías Digitales. Imágenes de <a href="https://www.pexels.com" target="_blank">Pexels</a> con licencia libre.</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
